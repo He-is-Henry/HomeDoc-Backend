@@ -103,7 +103,7 @@ const login = async (req, res) => {
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
-      sameSite: process.env.NODE_ENV === "production" ? "Lax" : "Strict",
+      sameSite: process.env.NODE_ENV === "production" ? "None" : "Strict",
       maxAge: 30 * 24 * 60 * 60 * 1000,
     });
 
@@ -163,7 +163,7 @@ const handleRefresh = async (req, res) => {
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
-      sameSite: process.env.NODE_ENV === "production" ? "Lax" : "Strict",
+      sameSite: process.env.NODE_ENV === "production" ? "None" : "Strict",
       maxAge: 30 * 24 * 60 * 60 * 1000,
     });
 
