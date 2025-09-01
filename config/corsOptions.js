@@ -1,7 +1,7 @@
 // config/corsOptions.js
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://homedoc-backend-69l2.onrender.com"
+  "https://homedoc-ng.netlify.app",
   // "http://localhost:3000","https://your-production-domain.com",
 ];
 
